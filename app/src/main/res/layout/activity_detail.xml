@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title Section -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Krisis Kemanusiaan! Bantu Anak Terdampak Konflik"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Collected Amount -->
+            <TextView
+                android:id="@+id/donationCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp1.269.000"
+                android:textSize="16sp"
+                android:textColor="#00AEEF"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="8dp" />
+
+            <!-- Goal Progress -->
+            <TextView
+                android:id="@+id/donationTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terkumpul dari Rp100.000.000"
+                android:textSize="14sp"
+                android:textColor="#B0B0B0"
+                android:layout_marginTop="4dp" />
+
+            <!-- Remaining Days -->
+            <TextView
+                android:id="@+id/days_remaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100 hari"
+                android:textSize="14sp"
+                android:textColor="#B0B0B0"
+                android:layout_marginTop="4dp"
+                android:gravity="end" />
+
+            <!-- Image Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:background="#B6B6B6" />
+
+            </LinearLayout>
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ini adalah deskripsi mengenai aktivitas di atas. Tolong mengerti bahwa ini hanyalah contoh..."
+                android:textColor="#B0B0B0"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/totalDonationImg"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_heart" />
+
+                    <TextView
+                        android:id="@+id/totalDonation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="210"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/totalNewsImg"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_news" />
+
+                    <TextView
+                        android:id="@+id/totalNews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/totalExpensesImg"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_money" />
+
+                    <TextView
+                        android:id="@+id/totalExpenses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Donation Button -->
+    <Button
+        android:id="@+id/donate_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@null"
+        android:background="@drawable/style_donasi_button"
+        android:fontFamily="sans-serif-medium"
+        android:text="Donasi"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</LinearLayout>

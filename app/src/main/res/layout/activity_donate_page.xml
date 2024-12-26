@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    >
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help make the world a better place!"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Amount Input -->
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Jumlah dalam rupiah"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#347FD6"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColorHint="#347FD6"
+        />
+
+    <!-- Repeat Donation Checkbox -->
+<!--    <CheckBox-->
+<!--        android:id="@+id/repeat_donation"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Agree to the T/C"-->
+<!--        android:textColor="#000000"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:layout_marginBottom="24dp" />-->
+
+    <!-- Donate Button -->
+    <Button
+        android:id="@+id/donate_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#347FD6"
+        android:text="Donasi"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="bottom"
+        />
+</LinearLayout>
