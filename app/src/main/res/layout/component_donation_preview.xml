@@ -1,0 +1,102 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:background="@drawable/style_donation_preview"
+        android:elevation="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginVertical="12dp"
+        style="@style/rounded">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/donationThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:shapeAppearanceOverlay="@style/rounded"
+            android:background="@drawable/style_donation_preview"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="8dp"
+            >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Hello"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="#757575"
+                    android:text="Terkumpul"
+                    />
+
+                <TextView
+                    android:id="@+id/donationCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="Rp. ..."
+                    android:textColor="#10A8E5"
+                    android:layout_marginLeft="4dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/popup_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:elevation="8dp"
+        android:paddingVertical="1dp"
+        android:paddingHorizontal="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/style_darurat_popup"
+        android:gravity="center"
+        android:visibility="invisible"
+    >
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/icon_emergency_white"
+        />
+
+        <TextView
+            android:id="@+id/popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textSize="11sp"
+            android:text="Test"
+            android:textColor="@color/white"
+        />
+    </LinearLayout>
+</FrameLayout>

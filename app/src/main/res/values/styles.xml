@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="shareButton">
+        <item name="android:background">@color/white</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="rounded">
+        <item name="cornerSize">4dp</item>
+    </style>
+</resources>
