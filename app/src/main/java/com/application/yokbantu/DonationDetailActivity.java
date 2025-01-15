@@ -25,6 +25,15 @@ public class DonationDetailActivity extends AppCompatActivity {
         if (donation != null) {
             setDonationDetails(donation);
         }
+
+        // Intent for the Payment page
+        TextView donationButton = this.findViewById(R.id.donationButton);
+
+        donationButton.setOnClickListener(v -> {
+            Intent pay = new Intent(this, PaymentActivity.class);
+            pay.putExtra("donation", donation);
+            startActivity(pay);
+        });
     }
 
     private void setDonationDetails(Donation donation) {

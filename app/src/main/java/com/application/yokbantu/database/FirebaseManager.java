@@ -5,7 +5,6 @@ import android.util.Log;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 public class FirebaseManager {
 
@@ -37,8 +36,8 @@ public class FirebaseManager {
         });
     }
 
-    public static <E> void put(String key, E value){
-        DocumentReference docRef = db.collection("users").document("documentId");
+    public static <E> void put(String collection, String id, String key, E value){
+        DocumentReference docRef = db.collection(collection).document(id);
 
         docRef.update(key, value)
         .addOnSuccessListener(aVoid -> {

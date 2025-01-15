@@ -8,4 +8,24 @@
     <style name="rounded">
         <item name="cornerSize">4dp</item>
     </style>
+
+    <style name="SearchViewStyle" parent="Theme.AppCompat.Light">
+        <!-- Set font family -->
+        <item name="fontFamily">@font/manrope_semibold</item> <!-- Use a font from res/font or a system font -->
+        <!-- Set text size -->
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SearchViewTextStyleGray" parent="TextAppearance.AppCompat">
+        <!-- Set font family -->
+        <item name="fontFamily">@font/manrope_semibold</item> <!-- Use a font from res/font or a system font -->
+        <!-- Set text size -->
+        <item name="android:textSize">14sp</item>
+        <!-- Set text color -->
+        <item name="android:textColor"></item>
+        <!-- Set hint text color -->
+        <item name="android:textColorHint"></item>
+    </style>
+
+
 </resources>
