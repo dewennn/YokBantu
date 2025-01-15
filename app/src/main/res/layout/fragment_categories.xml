@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/style_category_gradient"
     tools:context=".fragments.Darurat">
 
     <LinearLayout
@@ -19,6 +18,7 @@
             android:text="Ayok Bantu!"
             android:textStyle="bold"
             android:textSize="20sp"
+            android:fontFamily="@font/manrope_bold"
         />
 
     </LinearLayout>
@@ -29,7 +29,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:scrollbars="horizontal"
-        android:paddingVertical="8dp"
     />
 
     <androidx.recyclerview.widget.RecyclerView

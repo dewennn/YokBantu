@@ -29,6 +29,7 @@
         android:textSize="12sp"
         android:textColor="#347FD6"
         android:layout_marginStart="10dp"
+        android:fontFamily="@font/manrope_bold"
     />
 
 </LinearLayout>

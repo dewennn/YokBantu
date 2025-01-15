@@ -32,8 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Judul"
-            android:textSize="16dp"
+            android:textSize="20dp"
             android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
         />
 
         <TextView
@@ -41,22 +42,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RpX.XXX.XXX"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#347FD6"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/manrope_bold"
         />
 
-        <TextView
-            android:id="@+id/donationTarget"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Terkumpul dari RpX.XXX.XXX"
-            android:textSize="12dp"
-            android:textStyle="bold"
-            android:textColor="#767676"
-            android:layout_marginTop="8dp"
-            />
+          <TextView
+              android:id="@+id/donationTarget"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="4dp"
+              android:fontFamily="@font/manrope_bold"
+              android:text="Terkumpul dari RpX.XXX.XXX"
+              android:textColor="#767676"
+              android:textSize="13dp"
+              android:textStyle="bold" />
       </LinearLayout>
 
 <!--      IMAGES-->
@@ -73,21 +75,12 @@
       </LinearLayout>
 
 <!--      DESCRIPTION-->
-      <TextView
-          android:id="@+id/description"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="Description"
-          android:textSize="12dp"
-          android:paddingVertical="8dp"
-          android:paddingHorizontal="12dp"
-      />
 
-<!--      DETAILS-->
+      <!--      DETAILS-->
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:paddingTop="20dp"
+          android:paddingVertical="20dp"
           android:weightSum="3"
       >
         <LinearLayout
@@ -100,6 +93,7 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
+              android:gravity="center"
           >
             <ImageView
                 android:layout_width="20dp"
@@ -112,12 +106,22 @@
                 android:layout_height="wrap_content"
                 android:text="xxx"
                 android:paddingHorizontal="12dp"
+                android:paddingBottom="4dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="#347FD6"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/style_icon_number"
+                android:gravity="center_vertical"
             />
           </LinearLayout>
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="Donasi"
+              android:fontFamily="@font/manrope_semibold"
+              android:layout_marginTop="4dp"
+              android:textColor="#767676"
+              android:textSize="13dp"
           />
         </LinearLayout>
 
@@ -127,29 +131,40 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
-            >
+        >
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              >
+              android:gravity="center"
+          >
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/icon_news"
-                />
+            />
             <TextView
                 android:id="@+id/totalNews"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="xxx"
                 android:paddingHorizontal="12dp"
-                />
+                android:paddingBottom="4dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="#347FD6"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/style_icon_number"
+                android:gravity="center_vertical"
+            />
           </LinearLayout>
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="Kabar Terbaru"
-              />
+              android:text="Kabar"
+              android:layout_marginTop="4dp"
+              android:fontFamily="@font/manrope_semibold"
+              android:textColor="#767676"
+              android:textSize="13dp"
+          />
         </LinearLayout>
 
         <LinearLayout
@@ -158,31 +173,51 @@
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
-            >
+        >
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              >
+              android:gravity="center"
+          >
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/icon_money"
-                />
+            />
             <TextView
                 android:id="@+id/totalExpensesUsed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="xxx"
                 android:paddingHorizontal="12dp"
-                />
+                android:paddingBottom="4dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="#347FD6"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/style_icon_number"
+                android:gravity="center_vertical"
+            />
           </LinearLayout>
           <TextView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="Penggunaan Dana"
-              />
+              android:text="Pengeluaran"
+              android:layout_marginTop="4dp"
+              android:fontFamily="@font/manrope_semibold"
+              android:textColor="#767676"
+              android:textSize="13dp"
+          />
         </LinearLayout>
       </LinearLayout>
+
+      <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_semibold"
+        android:paddingHorizontal="12dp"
+        android:text="Description"
+        android:textSize="12dp" />
     </LinearLayout>
   </android.widget.ScrollView>
 

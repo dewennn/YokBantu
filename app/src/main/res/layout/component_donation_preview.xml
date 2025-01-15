@@ -10,8 +10,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
         android:orientation="vertical"
-        android:background="@drawable/style_donation_preview"
-        android:elevation="4dp"
         android:layout_marginStart="12dp"
         android:layout_marginVertical="12dp"
         style="@style/rounded">
@@ -19,7 +17,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/donationThumbnail"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="160dp"
             app:shapeAppearanceOverlay="@style/rounded"
             android:background="@drawable/style_donation_preview"
             />
@@ -29,41 +27,43 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingVertical="4dp"
-            android:paddingHorizontal="8dp"
             >
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 android:text="Hello"
+                android:fontFamily="@font/manrope_semibold"
                 />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                >
+            >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="11sp"
+                    android:textSize="12sp"
                     android:textColor="#757575"
                     android:text="Terkumpul"
-                    />
+                    android:textStyle="bold"
+                    android:fontFamily="@font/manrope_semibold"
+                />
 
                 <TextView
                     android:id="@+id/donationCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     android:text="Rp. ..."
                     android:textColor="#10A8E5"
                     android:layout_marginLeft="4dp"
-                    />
+                    android:fontFamily="@font/manrope_bold"
+                />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -75,13 +75,14 @@
         android:layout_gravity="top|start"
         android:elevation="8dp"
         android:paddingVertical="1dp"
-        android:paddingHorizontal="4dp"
+        android:paddingHorizontal="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:orientation="horizontal"
         android:background="@drawable/style_darurat_popup"
         android:gravity="center"
         android:visibility="invisible"
+        android:fontFamily="@font/manrope_semibold"
     >
         <ImageView
             android:layout_width="12dp"

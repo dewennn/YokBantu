@@ -23,6 +23,7 @@
             android:textColor="#F32F2F"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:fontFamily="@font/manrope_bold"
             />
         <ImageView
             android:layout_width="28dp"
@@ -38,7 +39,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:scrollbars="horizontal"
-        android:paddingVertical="20dp"
+        android:paddingTop="20dp"
     />
 
 </LinearLayout>

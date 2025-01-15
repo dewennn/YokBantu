@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "382641955361",
+    "project_id": "yokbantu-ca1d6",
+    "storage_bucket": "yokbantu-ca1d6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382641955361:android:2a464246edf0b5e76eb960",
+        "android_client_info": {
+          "package_name": "com.application.yokbantu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ihhfwMcz63Pq20WdM6Xi4faNgCCIY_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

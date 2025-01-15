@@ -31,16 +31,17 @@
                 android:text="Total Donasi"
                 android:textColor="@color/white"
                 android:textSize="12sp"
+                android:fontFamily="@font/manrope_semibold"
             />
 
             <TextView
                 android:id="@+id/donationAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rp 1.000.000"
+                android:text="Rp ..."
                 android:textColor="@color/white"
-                android:textSize="28sp"
-                android:textStyle="bold"
+                android:textSize="26sp"
+                android:fontFamily="@font/manrope_bold"
             />
         </LinearLayout>
 
@@ -68,6 +69,7 @@
                     android:text="0"
                     android:textColor="@color/white"
                     android:textSize="16sp"
+                    android:fontFamily="@font/manrope_semibold"
                 />
 
                 <ImageView
